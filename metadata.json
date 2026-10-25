@@ -1,0 +1,8 @@
+{
+  "name": "Remix Maths Teacher Board: Stage 8",
+  "description": "Teacher-led whiteboard-style teaching framework and visual mathematical tools for Cambridge Stage 8.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

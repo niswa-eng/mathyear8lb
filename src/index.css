@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-board: #FAF8F3;
+    --text-navy: #0F1E36;
+    --border-subtle: #E3DED4;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--bg-board);
+    color: var(--text-navy);
+    font-family: 'Nunito', 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    overscroll-behavior: none;
+    -webkit-touch-callout: none;
+  }
+}
+
+/* Custom working space grid backgrounds */
+.bg-grid-blank {
+  background-color: #FAF8F3;
+}
+
+.bg-grid-dots {
+  background-color: #FAF8F3;
+  background-image: radial-gradient(#C6BFB1 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
+}
+
+.bg-grid-squares {
+  background-color: #FAF8F3;
+  background-image: 
+    linear-gradient(to right, rgba(198, 191, 177, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(198, 191, 177, 0.45) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.bg-grid-lined {
+  background-color: #FAF8F3;
+  background-image: linear-gradient(to bottom, rgba(198, 191, 177, 0.55) 1.5px, transparent 1.5px);
+  background-size: 100% 44px;
+}
+
+.bg-grid-graph {
+  background-color: #FAF8F3;
+  background-image: 
+    linear-gradient(to right, rgba(175, 166, 150, 0.6) 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, rgba(175, 166, 150, 0.6) 1.5px, transparent 1.5px),
+    linear-gradient(to right, rgba(198, 191, 177, 0.25) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(198, 191, 177, 0.25) 1px, transparent 1px);
+  background-size: 144px 144px, 144px 144px, 24px 24px, 24px 24px;
+}
+
+/* KaTeX sizing */
+.katex {
+  font-size: 1.0em !important;
+  line-height: 1.25 !important;
+}
+
+.katex-display {
+  margin: 0.25em 0 !important;
+}
+
+/* Hide scrollbars for clean classroom IFP presentation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
